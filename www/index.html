@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>My Notes</title>
+</head>
+
+<body>
+
+  <div id="card">
+    <header>
+      <div id="first-line">
+        <button id="menu-button">
+          <img src="img/dots.svg" alt="search">
+        </button>
+        <h1>Boards</h1>
+        <nav>
+          <button id="add"><img src="img/plus.svg" alt="search"></button>
+          <button id="search"><img src="img/search.svg" alt="search"></button>
+          <button id="alerts"><img src="img/clock.svg" alt="search"></button>
+        </nav>
+      </div>
+      <nav id="navigation">
+        <button> <img src="img/min.svg" alt="<"> </button>
+
+        <select name="current-board" id="current-board">
+          <option value="0">Unamed1</option>
+          <option value="0">Unamed2</option>
+          <option value="0">Unamed3</option>
+          <option value="0">Unamed4</option>
+          <option value="0">Unamed5</option>
+          <option value="0">Unamed6</option>
+          <option value="0">Unamed7</option>
+          <option value="0">Unamed8</option>
+        </select>
+
+        <button> <img src="img/max.svg" alt=">"> </button>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <div id="boards">
+
+    	<div id="columns-holder">
+	       	<div id="todo">
+	      		<h1>To do</h1>
+
+            <div id="holder">
+                <div class="card">
+                  <div id="annotations">
+                    <h4 id="title">
+                      Basic
+                    </h4>
+                    Icon
+                  </div>
+                  <div name="content" id="content">
+                    <p>Play videogames!</p>
+                  </div>
+                  <div id="logged-time">
+                    <span id="logged-time-title">Logged time</span>
+                    <span id="time">22:10:11</span>
+                  </div>
+                </div>
+            </div>
+
+
+	      		<button class="addNote" onclick="alert(1)"><img src="img/plus.svg" alt="+"></button>
+	      	</div>
+
+	      	<div id="doing">
+	      		<h1>Doing</h1>
+
+	      		<button class="addNote" onclick="alert(2)"><img src="img/plus.svg" alt="+"></button>
+	      	</div>
+
+	      	<div id="review">
+	      		<h1>Review</h1>
+
+	      		<button class="addNote" onclick="alert(3)"><img src="img/plus.svg" alt="+"></button>
+	      	</div>
+
+	      	<div id="done">
+	      		<h1>Done</h1>
+
+	      		<button class="addNote" onclick="alert(4)"><img src="img/plus.svg" alt="+"></button>
+	      	</div>
+	    </div>
+
+
+
+
+    </div>
+  </main>
+
+
+  <script load="lazy" src="js/index.js">
+
+  </script>
+</body>
+
+</html>

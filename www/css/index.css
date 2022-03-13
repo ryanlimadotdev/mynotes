@@ -1,0 +1,169 @@
+@import '../fonts/fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font: normal 1em Arial;
+    text-decoration: none;
+    webkit-tap-highlight-color:  transparent;
+    background-color:  transparent;
+    overflow: hidden;
+}
+
+header {
+    padding: 20px 10px;
+    background-color: #2297f4;
+    box-shadow: 0px 1px 5px 0 black;
+}
+header * {
+    font-family: "JetBrains";
+    color: #fff;
+}
+
+#menu-button {
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    vertical-align: bottom;
+    width: 32px;
+    height: 32px;
+}
+
+#menu-button > img{
+    font-size: 0;
+    filter: invert();
+    width: 16px;
+    height: 16px;
+}
+
+#first-line {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#first-line > h1 {
+    font-family: Arial;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 32px;
+    line-height: 32px;
+}
+
+#first-line > nav {
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+}
+
+#first-line > nav > button {
+    height: 22px;
+    width: 22px;
+    margin-left: 20px;
+}
+#first-line > nav > button > img {
+    filter: invert();
+}
+
+header > #navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > #navigation > button {
+    vertical-align: bottom;
+}
+
+header > #navigation > button > img {
+    height: 16px;
+    width: 16px;
+    filter: invert(
+    );
+}
+
+
+main > #boards {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+
+#columns-holder {
+    display: flex;
+    flex-flow: row nowrap;
+    color: green;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-direction:  horizontal;
+    scroll-snap-type: x mandatory;
+}
+#columns-holder::-webkit-scrollbar {
+  display: none;
+}
+
+#columns-holder > div {
+    scroll-snap-align:  center;
+    flex: none;
+    position: relative;
+    text-align: center;
+    height: calc(100vh - 140px);
+    width: 100%;
+}
+
+#columns-holder > div > h1{
+    margin: 5px 0 20px;
+}
+
+.addNote {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    transform: translateX(-50%);
+    left: 50%;
+
+    background-color: green;
+}
+.addNote > img {
+    height: 20px;
+}
+.card,
+.card *
+{
+    color: white;
+}
+.card {
+    border-radius: 7px;
+    padding: 5px 10px 5px;
+    background-color: #2297f4;
+}
+
+.card > #annotations {
+    font-size: 12px;
+    font-weight: 900;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+.card > #annotations * {
+    font: inherit;
+}
+
+.card #logged-time {
+    content: "Logged time ";
+    font-size: 10px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.card > #logged-time > #time{
+    float: right;
+}
